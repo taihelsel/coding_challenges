@@ -12,9 +12,6 @@ There must be a function for each of the following mathematical operations: plus
 Each calculation consist of exactly one operation and two numbers
 The most outer function represents the left operand, the most inner function represents the right operand
 */
-
-
-
 //Solution
 const zero = (fn = false) => eval(0 + fn);
 const one = (fn = false) => eval(1 + fn);
@@ -31,3 +28,8 @@ const plus = n =>'+' + n;
 const minus = n =>'-' + n;
 const times = n =>'*' + n;
 const dividedBy = n =>'/' + n;
+
+//Tests
+console.log(seven(times(five())));
+console.log(four(plus(nine())));
+console.log(eight(minus(three())));
