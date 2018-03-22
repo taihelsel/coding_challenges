@@ -28,10 +28,8 @@ const snail = arr =>{
         break;
         case "bottom":
           nextMove ="left";
-          for(let i=x-1;i>=0;i--){
-            newArr.push(arr[y-1][i]);
-            arr[y-1].splice(i,1);
-          }
+          newArr = newArr.concat(arr[y-1].reverse());
+          arr.splice(y-1,1);
         break;
         case "left":
           nextMove ="top";
